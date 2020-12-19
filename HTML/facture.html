@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <title>TP3-acceuil</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="styleFacture.css" rel="stylesheet">
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg fixed-top bg-warning navbar-dark acceuil">
+    <a class="nav-link" href="index.html"><img id="logo" src="logo.png" width="120" height="80" alt="1"></a>
+    <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#collapsibleNavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div id="collapsibleNavbar" class="collapse navbar-collapse justify-content-end">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a id="liensHaut" class="nav-link" href="index.html#vetements"> Vetements</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="index.html#accessoires"> Accessoires </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="propos.html"> A propos de nous </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="contact.html"> Nous contacter </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="panier.html"> Panier <i class="fa fa-shopping-cart"></i></a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <header>
+    <h1 class="text-warning"><ins> Confirmation Facture </ins></h1>
+  </header>
+  <div class="container-fluid">
+    <div class="card">
+      <div class="card-body">
+        <p></p>
+        <h2 class="card-title"><ins> Facture</ins></h2>
+        <h5 class="nbDeProduits">Nombre de produits : </h5>
+        <h5 class="tabDeId">IDs des produits : </h5>
+        <h5 class="tabDeNoms"> Noms des produits : </h5>
+      </div>
+      <div class="card-footer">
+        <h5 class="sousTotal">Prix Total : </h5>
+      </div>
+    </div>
+  </div>
+  <div style="text-align:center;">
+     <a href="index.html" class="btn btn-warning"> Passer la commande </a>
+  </div>
+  <footer class="fixed-bottom">
+    &copy; André-Laurendeau 201
+  </footer>
+  <script src="facture.js"></script>
+</body>
+
+</html>

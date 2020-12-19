@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <title>TP3-acceuil</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="styleContact.css" rel="stylesheet">
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg fixed-top bg-warning navbar-dark acceuil">
+    <a class="nav-link" href="index.html"><img id="logo" src="logo.png" width="120" height="80" alt="1"></a>
+    <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#collapsibleNavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div id="collapsibleNavbar" class="collapse navbar-collapse justify-content-end">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a id="liensHaut" class="nav-link" href="index.html#vetements"> Vetements</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="index.html#accessoires"> Accessoires </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="propos.html"> A propos de nous </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="contact.html"> Nous contacter </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="panier.html"> Panier <i class="fa fa-shopping-cart"></i></a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <header>
+    <h1 class="text-warning"><ins> Nous Contecter </ins></h1>
+  </header>
+  <div id="monAppReact"></div>
+  <form class="container-fluid">
+    <div class="form-row">
+      <div class="col-6">
+        <label> Prenom</label>
+        <input type="text" class="form-control" placeholder="votre prenom" required>
+      </div>
+      <div class="col-6">
+        <label> Nom </label>
+        <input type="text" class="form-control" placeholder="votre nom" required>
+      </div>
+    </div>
+    <div class="form-row">
+      <div class="col-6">
+        <label> Age </label>
+        <input type="number" class="form-control" placeholder="votre age" required>
+      </div>
+      <div class="col-6">
+        <label>Sexe</label>
+        <select class="form-control">
+          <option selected>Homme</option>
+          <option>Femme</option>
+        </select>
+      </div>
+    </div>
+    <div class="form-group">
+      <label> Email </label>
+      <input type="email" class="form-control" placeholder="Email" required>
+    </div>
+    <div class="form-group">
+      <label>Revenu Familial</label>
+      <select class="form-control">
+        <option>1$ à 24 999$</option>
+        <option>25 000$ à 49 999$</option>
+        <option selected>50 000$ à 69 999$</option>
+        <option>70 000$ à 99 999$</option>
+        <option>100 000$ à 499 999$</option>
+        <option>500 000$ et plus</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <label>Votre Message</label>
+      <textarea class="form-control" rows="4" placeholder="Message" required></textarea>
+    </div>
+    <div style="text-align:center;">
+      <a href="index.html" class="btn btn-warning"> Envoyer le message</a>
+    </div>
+  </form>
+  <footer class="fixed-bottom">
+    &copy; André-Laurendeau 2019
+  </footer>
+  <script src="contact.js" type="text/babel"></script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+h1 {
+  padding-top: 100px;
+  font-size: 60px;
+  text-align: center;
+}
+
+.navbar-nav .nav-item .nav-link {
+  color: white;
+}
+
+.navbar-nav .nav-item.active .nav-link,
+.navbar-nav .nav-item:hover .nav-link {
+  color: black;
+}
+
+footer {
+  text-align: center;
+  margin-top: 5%;
+  background-color: black;
+  color: white;
+}
+.container-fluid{
+  width: 50%;
+}
+.card{
+  text-align: center;
+}
+table{
+  margin: 0px auto;
+  text-align: center;
+}

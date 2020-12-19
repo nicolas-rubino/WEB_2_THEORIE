@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <title>TP3-acceuil</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="styleIndex.css" rel="stylesheet">
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg fixed-top bg-warning navbar-dark ">
+    <a class="nav-link" href="index.html"><img id="logo" src="logo.png" width="120" height="80" alt="1"></a>
+    <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#collapsibleNavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div id="collapsibleNavbar" class="collapse navbar-collapse justify-content-end">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="index.html#vetements"> Vetements</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="index.html#accessoires"> Accessoires </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="propos.html"> A propos de nous </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="contact.html"> Nous contacter </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link buttonPanier" onclick="defPanier()" href="panier.html"> Panier <i class="fa fa-shopping-cart"></i></a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <header>
+    <h1>Hypebeast</h1>
+  </header>
+  <div id="vetements" class="vetements">
+    <div class="container-fluid">
+      <h1 class="text-warning"><ins> Vetements </ins></h1>
+      <div class="card-deck ">
+        <div class="card mx-auto Jeans">
+        <img class="card-img img-fluid" src="prod1.jpg" alt="avt1">
+          <div class="card-body">
+            <h5 class="card-title">Jeans</h5>
+            <p class="card-text"> Proident, sunt in culpa qui officia deserunt nst laborum. Proident,  sunt in culpa qui officia deserunt nst laborum. Proident,</p>
+            <h5 class="card-text prix">Prix : 59.99$</h5>
+            </div>
+             <div class="card-footer">
+               <button class="btn btn-warning" onclick="ajouterProduit(0)">Acheter</button>
+             </div>
+          </div>
+
+        <div class="card mx-auto  ">
+          <img class="card-img img-fluid" src="prod2.jpg" alt="avt2">
+          <div class="card-body">
+            <h5 class="card-title">Hoodie</h5>
+            <p class="card-text"> Proident, sunt in culpa qui officia deserunt nst laborum. Proident,
+              sunt in culpa qui officia deserunt nst laborum. Proident,</p>
+            <h5 class="card-text prix">Prix: 242.32$</h5>
+          </div>
+          <div class="card-footer">
+            <button class="btn btn-warning" onclick="ajouterProduit(1)">Acheter</button>
+          </div>
+        </div>
+
+        <div class="card mx-auto">
+          <img class="card-img img-fluid" src="prod3.jpg" alt="avt3">
+          <div class="card-body">
+            <h5 class="card-title"> Robe</h5>
+            <p class="card-text"> Proident, sunt in culpa qui officia deserunt nst laborum. Proident,
+              sunt in culpa qui officia deserunt nst laborum. Proident,</p>
+            <h5 class="card-text prix">Prix : 172.00$</h5>
+          </div>
+          <div class="card-footer">
+            <button class="btn btn-warning" onclick="ajouterProduit(2)">Acheter</button>
+          </div>
+        </div>
+
+        <div class="card mx-auto">
+          <img class="card-img img-fluid" src="prod4.png" alt="avt4">
+          <div class="card-body">
+            <h5 class="card-title">T-shirt</h5>
+            <p class="card-text"> Proident, sunt in culpa qui officia deserunt nst laborum. Proident,
+              sunt in culpa qui officia deserunt nst laborum. Proident,</p>
+            <h5 class="card-text prix">Prix : 134.56$ </h5>
+          </div>
+          <div class="card-footer">
+            <button class="btn btn-warning" onclick="ajouterProduit(3)">Acheter</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="accessoires" class="accessoires">
+    <h1 class="text-warning"> <ins> Accessoires </ins> </h1>
+    <div class="container-fluid">
+      <div class="card-deck ">
+        <div class="card mx-auto">
+          <img class="card-img img-fluid" src="prod5.jpg" alt="avt5">
+          <div class="card-body">
+            <h5 class="card-title">Pierre</h5>
+            <p class="card-text"> Proident, sunt in culpa qui officia deserunt nst laborum. Proident,
+              sunt in culpa qui officia deserunt nst laborum. Proident,</p>
+            <h5 class="card-text prix">Prix : 89.99$ </h5>
+          </div>
+          <div class="card-footer">
+            <button class="btn btn-warning" onclick="ajouterProduit(4)">Acheter</button>
+          </div>
+        </div>
+
+        <div class="card mx-auto">
+          <img class="card-img img-fluid" src="prod6.jpg" alt="avt6">
+          <div class="card-body">
+            <h5 class="card-title">Montre</h5>
+            <p class="card-text hidden"> Proident, sunt in culpa qui officia deserunt nst laborum. Proident,
+              sunt in culpa qui officia deserunt nst laborum. Proident,</p>
+            <h5 class="card-text prix">Prix : 79.99$ </h5>
+          </div>
+          <div class="card-footer">
+            <button class="btn btn-warning" onclick="ajouterProduit(5)">Acheter</button>
+          </div>
+        </div>
+
+        <div class="card mx-auto">
+          <img class="card-img img-fluid" src="prod7.jpg" alt="avt7">
+          <div class="card-body">
+            <h5 class="card-title"> Casquette</h5>
+            <p class="card-text"> Proident, sunt in culpa qui officia deserunt nst laborum. Proident,
+              sunt in culpa qui officia deserunt nst laborum. Proident,</p>
+            <h5 class="card-text prix">Prix : 67.42$</h5>
+          </div>
+          <div class="card-footer">
+            <button class="btn btn-warning" onclick="ajouterProduit(6)">Acheter</button>
+          </div>
+        </div>
+
+        <div class="card mx-auto">
+          <img class="card-img img-fluid" src="prod8.jpg" alt="avt8">
+          <div class="card-body">
+            <h5 class="card-title">Souliers Nike</h5>
+            <p class="card-text">Proident, sunt in culpa qui officia deserunt nst laborum. Proident,
+              sunt in culpa qui officia deserunt nst laborum. Proident</p>
+            <h5 class="card-text prix">Prix : 45.50$ </h5>
+          </div>
+          <div class="card-footer">
+            <button class="btn btn-warning" onclick="ajouterProduit(7)">Acheter</button>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+    <footer>
+      &copy; André-Laurendeau 2019
+    </footer>
+    <script src="accueil.js"></script>
+</body>
+</html>
